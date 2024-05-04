@@ -6,9 +6,14 @@
 
 const populate = {
   hero_section: {
-    populate: true,
-    fields: []
+    populate: {
+      Button: {
+        populate: true
+      }
+    },
+    fields: [],
   },
+
   metadata: {
     populate: true,
     fields: []

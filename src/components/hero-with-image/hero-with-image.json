@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_hero_with_image_hero_with_images",
+  "info": {
+    "displayName": "HeroWithImage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "h1": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "button.button"
+    }
+  }
+}

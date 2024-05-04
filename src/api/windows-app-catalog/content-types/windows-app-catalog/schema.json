@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "windows_app_catalogs",
+  "info": {
+    "singularName": "windows-app-catalog",
+    "pluralName": "windows-app-catalogs",
+    "displayName": "WindowsAppCatalog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "hero_section": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "hero-with-image.hero-with-image"
+    },
+    "metadata": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "meta-data.meta-data"
+    }
+  }
+}

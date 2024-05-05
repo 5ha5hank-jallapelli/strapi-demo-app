@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_windows_app_catalog_empowering_admins",
+  "info": {
+    "displayName": "empoweringAdmins",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.card"
+    },
+    "h2": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    }
+  }
+}

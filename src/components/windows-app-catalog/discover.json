@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_windows_app_catalog_discovers",
+  "info": {
+    "displayName": "Discover",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "h2": {
+      "type": "string"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.card",
+      "icon": {
+        "allowedTypes": [
+          "images"
+        ],
+        "type": "media",
+        "multiple": false
+      }
+    }
+  }
+}

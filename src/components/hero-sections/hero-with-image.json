@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_hero_with_image_hero_with_images",
+  "collectionName": "components_hero_sections_hero_with_images",
   "info": {
     "displayName": "HeroWithImage",
     "description": ""
@@ -12,10 +12,21 @@
     "paragraph": {
       "type": "text"
     },
-    "Button": {
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "buttons": {
       "type": "component",
       "repeatable": true,
       "component": "button.button"
+    },
+    "subheader": {
+      "type": "string"
     }
   }
 }

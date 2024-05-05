@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_cards_group_cards",
+  "info": {
+    "displayName": "Cards",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.card"
+    }
+  }
+}

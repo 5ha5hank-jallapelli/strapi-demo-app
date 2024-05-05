@@ -380,13 +380,49 @@ export interface ApiWindowsAppCatalogWindowsAppCatalog
     };
   };
   attributes: {
-    hero_section: Attribute.Component<'hero-with-image.hero-with-image'> &
+    simplify_app_management: Attribute.Component<'windows-app-catalog.simplify-app-management'> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    metadata: Attribute.Component<'meta-data.meta-data'> &
+    empoweringAdmins: Attribute.Component<'windows-app-catalog.empowering-admins'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    discover: Attribute.Component<'windows-app-catalog.discover'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    metadata: Attribute.Component<'metadata.meta-data'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    hero_section: Attribute.Component<'hero-sections.hero-with-image'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    cta_one: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    cta_two: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    variety_apps: Attribute.Component<'windows-app-catalog.variety-of-apps'> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

@@ -1,7 +1,8 @@
 {
   "collectionName": "components_button_buttons",
   "info": {
-    "displayName": "Button"
+    "displayName": "button",
+    "description": ""
   },
   "options": {},
   "attributes": {

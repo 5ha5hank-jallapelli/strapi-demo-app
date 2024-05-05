@@ -15,4 +15,4 @@ module.exports = createCoreRouter('api::windows-app-catalog.windows-app-catalog'
       middlewares: ['api::windows-app-catalog.windows-app-catalog-populate']
     }
   }
-});
+})

@@ -16,7 +16,7 @@
     }
   },
   "attributes": {
-    "hero_section": {
+    "simplify_app_management": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -24,7 +24,27 @@
           "localized": true
         }
       },
-      "component": "hero-with-image.hero-with-image"
+      "component": "windows-app-catalog.simplify-app-management"
+    },
+    "empoweringAdmins": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "windows-app-catalog.empowering-admins"
+    },
+    "discover": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "windows-app-catalog.discover"
     },
     "metadata": {
       "type": "component",
@@ -34,7 +54,43 @@
           "localized": true
         }
       },
-      "component": "meta-data.meta-data"
+      "component": "metadata.meta-data"
+    },
+    "hero_section": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "hero-sections.hero-with-image"
+    },
+    "cta_one": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "cta_two": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "variety_apps": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "windows-app-catalog.variety-of-apps"
     }
   }
 }

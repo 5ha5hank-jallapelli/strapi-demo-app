@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_windows_app_catalog_variety_of_apps",
+  "info": {
+    "displayName": "VarietyOfApps"
+  },
+  "options": {},
+  "attributes": {
+    "h2": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    }
+  }
+}

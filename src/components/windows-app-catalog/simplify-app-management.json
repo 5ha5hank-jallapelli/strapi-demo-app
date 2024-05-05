@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_windows_app_catalog_simplify_app_managements",
+  "info": {
+    "displayName": "SimplifyAppManagement"
+  },
+  "options": {},
+  "attributes": {
+    "h2": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    }
+  }
+}

@@ -7,18 +7,41 @@
 const populate = {
   hero_section: {
     populate: {
-      Button: {
+      buttons: {
         populate: true
       }
     },
     fields: [],
   },
-
+  simplify_app_management: {
+    populate: true
+  },
+  discover: {
+    populate: {
+      features: {
+        populate: {
+          icon: {
+            populate: true
+          }
+        },
+      },
+    }
+  },
+  empoweringAdmins: {
+    populate: {
+      features: {
+        populate: true
+      }
+    }
+  },
+  variety_apps: {
+    populate: true
+  },
   metadata: {
     populate: true,
     fields: []
   }
-};
+}
 
 module.exports = (config, { strapi }) => {
   // Add your own logic here.

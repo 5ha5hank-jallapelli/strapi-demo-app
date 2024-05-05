@@ -37,6 +37,20 @@ const populate = {
   variety_apps: {
     populate: true
   },
+  cta_one: {
+    populate: {
+      buttons: {
+        populate: true
+      }
+    }
+  },
+  cta_two: {
+    populate: {
+      buttons: {
+        populate: true
+      }
+    }
+  },
   metadata: {
     populate: true,
     fields: []

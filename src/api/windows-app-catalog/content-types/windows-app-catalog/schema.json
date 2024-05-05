@@ -66,22 +66,6 @@
       },
       "component": "hero-sections.hero-with-image"
     },
-    "cta_one": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "cta_two": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
     "variety_apps": {
       "type": "component",
       "repeatable": false,
@@ -91,6 +75,26 @@
         }
       },
       "component": "windows-app-catalog.variety-of-apps"
+    },
+    "cta_one": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "call-to-action.cta"
+    },
+    "cta_two": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "call-to-action.cta"
     }
   }
 }

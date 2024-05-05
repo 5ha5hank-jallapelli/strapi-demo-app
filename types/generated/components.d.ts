@@ -21,6 +21,18 @@ export interface ButtonButton extends Schema.Component {
   };
 }
 
+export interface CallToActionCta extends Schema.Component {
+  collectionName: 'components_call_to_action_ctas';
+  info: {
+    displayName: 'CTA';
+  };
+  attributes: {
+    title: Attribute.String;
+    buttons: Attribute.Component<'button.button', true>;
+    paragraph: Attribute.Text;
+  };
+}
+
 export interface CardsGroupCards extends Schema.Component {
   collectionName: 'components_cards_group_cards';
   info: {
@@ -126,6 +138,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'button.button': ButtonButton;
+      'call-to-action.cta': CallToActionCta;
       'cards-group.cards': CardsGroupCards;
       'cards.card': CardsCard;
       'hero-sections.hero-with-image': HeroSectionsHeroWithImage;

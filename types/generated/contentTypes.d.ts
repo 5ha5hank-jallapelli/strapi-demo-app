@@ -410,19 +410,19 @@ export interface ApiWindowsAppCatalogWindowsAppCatalog
           localized: true;
         };
       }>;
-    cta_one: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    cta_two: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     variety_apps: Attribute.Component<'windows-app-catalog.variety-of-apps'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    cta_one: Attribute.Component<'call-to-action.cta'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    cta_two: Attribute.Component<'call-to-action.cta'> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

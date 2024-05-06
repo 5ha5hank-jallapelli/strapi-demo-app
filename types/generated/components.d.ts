@@ -86,6 +86,34 @@ export interface MetadataMetaData extends Schema.Component {
   };
 }
 
+export interface PitstopLocationReportGainDeepInsights
+  extends Schema.Component {
+  collectionName: 'components_pitstops_location_report_gain_deep_insights';
+  info: {
+    displayName: 'GainDeepInsights';
+    description: '';
+  };
+  attributes: {
+    h2: Attribute.String;
+    para_one: Attribute.Text;
+    para_two: Attribute.Text;
+    features: Attribute.JSON;
+  };
+}
+
+export interface PitstopLocationReportTrackKeyFeatures
+  extends Schema.Component {
+  collectionName: 'components_sections_track_key_features';
+  info: {
+    displayName: 'TrackKeyFeatures';
+    description: '';
+  };
+  attributes: {
+    h2: Attribute.String;
+    paragraph: Attribute.Text;
+  };
+}
+
 export interface WindowsAppCatalogDiscover extends Schema.Component {
   collectionName: 'components_windows_app_catalog_discovers';
   info: {
@@ -143,6 +171,8 @@ declare module '@strapi/types' {
       'cards.card': CardsCard;
       'hero-sections.hero-with-image': HeroSectionsHeroWithImage;
       'metadata.meta-data': MetadataMetaData;
+      'pitstop-location-report.gain-deep-insights': PitstopLocationReportGainDeepInsights;
+      'pitstop-location-report.track-key-features': PitstopLocationReportTrackKeyFeatures;
       'windows-app-catalog.discover': WindowsAppCatalogDiscover;
       'windows-app-catalog.empowering-admins': WindowsAppCatalogEmpoweringAdmins;
       'windows-app-catalog.simplify-app-management': WindowsAppCatalogSimplifyAppManagement;

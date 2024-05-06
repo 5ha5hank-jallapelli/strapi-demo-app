@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_pitstops_location_report_gain_deep_insights",
+  "info": {
+    "displayName": "GainDeepInsights",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "h2": {
+      "type": "string"
+    },
+    "para_one": {
+      "type": "text"
+    },
+    "para_two": {
+      "type": "text"
+    },
+    "features": {
+      "type": "json"
+    }
+  }
+}

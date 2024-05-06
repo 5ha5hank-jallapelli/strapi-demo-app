@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_track_key_features",
+  "info": {
+    "displayName": "TrackKeyFeatures",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "h2": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    }
+  }
+}

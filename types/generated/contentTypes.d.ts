@@ -362,6 +362,72 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
+export interface ApiPitstopLocationReportPitstopLocationReport
+  extends Schema.CollectionType {
+  collectionName: 'pitstop_location_reports';
+  info: {
+    singularName: 'pitstop-location-report';
+    pluralName: 'pitstop-location-reports';
+    displayName: 'Pitstop-location-report';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    hero_section: Attribute.Component<'hero-sections.hero-with-image'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    track_key_features: Attribute.Component<'pitstop-location-report.track-key-features'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    gain_deep_insights: Attribute.Component<'pitstop-location-report.gain-deep-insights'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    cta: Attribute.Component<'call-to-action.cta'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::pitstop-location-report.pitstop-location-report',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::pitstop-location-report.pitstop-location-report',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::pitstop-location-report.pitstop-location-report',
+      'oneToMany',
+      'api::pitstop-location-report.pitstop-location-report'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiWindowsAppCatalogWindowsAppCatalog
   extends Schema.CollectionType {
   collectionName: 'windows_app_catalogs';
@@ -888,6 +954,7 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
+      'api::pitstop-location-report.pitstop-location-report': ApiPitstopLocationReportPitstopLocationReport;
       'api::windows-app-catalog.windows-app-catalog': ApiWindowsAppCatalogWindowsAppCatalog;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;

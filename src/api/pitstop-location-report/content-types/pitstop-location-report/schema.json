@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pitstop_location_reports",
+  "info": {
+    "singularName": "pitstop-location-report",
+    "pluralName": "pitstop-location-reports",
+    "displayName": "Pitstop-location-report",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "hero_section": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "hero-sections.hero-with-image"
+    },
+    "track_key_features": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "pitstop-location-report.track-key-features"
+    },
+    "gain_deep_insights": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "pitstop-location-report.gain-deep-insights"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "call-to-action.cta"
+    }
+  }
+}
